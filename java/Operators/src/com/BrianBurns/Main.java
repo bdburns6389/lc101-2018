@@ -42,11 +42,21 @@ public class Main {
             System.out.println("You got the high score");
 
         int secondTopScore = 60;
-        if (topScore > secondTopScore && topScore < 100)
+        if ((topScore > secondTopScore) && (topScore < 100))
             // && is same as 'and' in python, || is same as 'or'
             System.out.println("Greater than top score and less than 100");
 
+        if ((topScore > 90) || (secondTopScore <= 90)) {
+            System.out.println("One of these tests is true");
+        } else {
+            System.out.println("Both of these tests are false");
+        }
 
+        boolean isCar = false;
+        boolean wasCar = isCar ? true : false;
+        // above is a ternary expression, if the first argument after the  ? is true, return that,
+        // otherwise, return the argument after the :
 
     }
+
 }
